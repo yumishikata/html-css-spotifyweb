@@ -1,0 +1,31 @@
+/* REGOLE GENERALI  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapped {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.menu_sinistra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 100px;
+  width: 300px;
+  background-color: blue;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: green;
+}
