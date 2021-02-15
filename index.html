@@ -36,7 +36,7 @@
         <div class="nav_home">
           <img src="img/logo.svg" alt="" class="img_logo">
           <ul>
-            <li><a href="#"> <img src="img/home.svg" alt="">Home</a></li>
+            <li class="casetta"><a href="#"> <img src="img/home.svg" alt="">Home</a></li>
             <li><a href="#"><img src="img/search.svg" alt="">Cerca</a></li>
             <li><a href="#"><img src="img/libreria.svg" alt="">La tua libreria</a></li>
           </ul>
@@ -72,7 +72,9 @@
       <!-- INIZIO MAIN, RIQUADRO PRINCIPALE CON LE CANZONI  -->
       <main>
         <div class="main_content">
-          <div class="main_lista text-center">
+
+          <!-- MAIN LISTA (TITOLINO IN ALTO) -->
+          <section class="main_lista text-center">
             <ul>
               <li><a href="#">IN EVIDENZA</a></li>
               <li><a href="#">PODCAST</a></li>
@@ -81,7 +83,81 @@
               <li><a href="#">NUOVE USCITE</a></li>
               <li><a href="#">SCOPRI</a></li>
             </ul>
-          </div>
+          </section>
+          <!-- FINE MAIN LISTA  -->
+
+          <!-- MAIN CANZONI  -->
+          <section class="main_canzoni">
+            <div class="prima_riga_canzoni ">
+              <h3>Recently played</h3>
+              <div class="container-fluid">
+                <div class="row text-center">
+                  <div class="col-xs-2">
+                    <img src="img/metal_lifting.jpg" alt="">
+                    <h5>Heavy Metal</h5>
+                    <p>Subtitle</p>
+                  </div>
+                  <div class="col-xs-2">
+                    <img src="img/stranger.jpeg" alt="">
+                    <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h5>
+                    <p>Kyle Dixon & Michael Stein</p>
+                  </div>
+                  <div class="col-xs-2">
+                    <img src="img/aquietplace.jpeg" alt="">
+                    <h5>A quiet place</h5>
+                    <p>Subtitle</p>
+                  </div>
+                  <div class="col-xs-2">
+                    <img src="img/split.jpeg" alt="">
+                    <h5>Split</h5>
+                    <p>Subtitle</p>
+                  </div>
+                  <div class="col-xs-2">
+                    <img src="img/cure.jpeg" alt="">
+                    <h5>A cure for wellness</h5>
+                    <p>Subtitle</p>
+                  </div>
+                  <div class="col-xs-2">
+                    <img src="img/sinister.jpeg" alt="">
+                    <h5>Sinister</h5>
+                    <p>Subtitle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="seconda_riga_canzoni">
+              <h3>Creato per John Doe</h3>
+              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+              <div class="container-fluid">
+                <div class="row text-center">
+                  <div class="col-xs-2">
+                    <img src="img/radar.jpeg" alt="">
+                    <h5 class="c_white">Realease Radar</h5>
+                  </div>
+                  <div class="col-xs-2">
+                    <img src="img/mixdaily.jpeg" alt="">
+                    <h5 class="c_white">Daily Mix 1</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="terza_riga_canzoni">
+              <h3>Artisti più popolari</h3>
+              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+              <div class="container-fluid">
+                <div class="row text-center">
+                  <div class="col-xs-2">
+                    <img src="img/youg.jpeg" alt="">
+                    <h5>Lana del Rey</h5>
+                  </div>
+                  <div class="col-xs-2">
+                    <img src="img/einaudi.jpeg" alt="">
+                    <h5>Einaudi</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
       <!-- FINE MAIN, RIQUADRO PRINCIPALE CON LE CANZONI  -->
@@ -95,7 +171,7 @@
             <img src="img/player_left.jpg" alt="">
           </div>
           <div class="titolo_canzone">
-            <h5 class="c_white">Sinister</h5>
+            <h6 class="c_white">Sinister</h6>
             <a href="#" class="c_grey">Brano nome</a>
           </div>
           <div class="icone_canzone">
@@ -132,7 +208,6 @@
           <a href="#"><i class="fas fa-volume-up"></i></a>
           <a href="#"class="barra_volume">
             <div class="barra_volume_sopra">
-
             </div>
           </a>
         </div>
