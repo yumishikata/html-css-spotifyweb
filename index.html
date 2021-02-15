@@ -4,24 +4,144 @@
     <meta charset="utf-8">
     <title>Spotify Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
+  <!-- CLASSE PER DARE MISURE FISSE ALLA PAGINA  -->
+    <div class="wrapped">
 
-    <div class="wrapped"><!-- CLASSE PER DARE MISURE FISSE ALLA PAGINA  -->
+      <!-- INIZIO HEADER -->
+      <header>
 
-      <nav class="menu_sinistra"> <!-- INIZIO NAV SINISTRO -->
+        <div class="top_header">
+          <a href="#" class="btn upgrade">EFFETTUA L'UPGRADE</a>
+        </div>
 
-      </nav> <!-- INIZIO NAV SINISTRO -->
+      </header>
+      <!-- FINE HEADER-->
 
-      <main> <!-- INIZIO MAIN, RIQUADRO PRINCIPALE CON LE CANZONI  -->
+  <!-- INIZIO NAV SINISTRO -->
+      <nav class="menu_sinistra">
 
-      </main> <!-- FINE MAIN, RIQUADRO PRINCIPALE CON LE CANZONI  -->
+        <!-- NAV HOME (PRIMA SEZIONE MENU) -->
+        <div class="nav_home">
+          <img src="img/logo.svg" alt="" class="img_logo">
+          <ul>
+            <li><a href="#"> <img src="img/home.svg" alt="">Home</a></li>
+            <li><a href="#"><img src="img/search.svg" alt="">Cerca</a></li>
+            <li><a href="#"><img src="img/libreria.svg" alt="">La tua libreria</a></li>
+          </ul>
+        </div>
 
-      <footer> <!-- INIZIO FOOTER, PLAYER FISSATO IN BASSO  -->
+        <!-- NAV PLAYLIST (SECONDA SEZIONE MENU) -->
+        <div class="nav_playlist">
+          <h5 class="c_white">PLAYLIST</h5>
+            <ul>
+            <li><a href="#"><div class="plus_square">
+              <i class="fas fa-plus"></i>
+            </div> Crea Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+          </ul>
+        </div>
 
-      </footer> <!-- INIZIO FOOTER, PLAYER FISSATO IN BASSO  -->
+        <!-- NAV NAME (TERZA SEZIONE MENU) -->
+        <div class="nav_name">
+          <a href="#" class="install"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a>
+          <div class="finto_hr"></div>
+          <a href="#"><img src="img/profile.svg" class="omino" alt=""><h5 class="c_white">John Doe</h5></a>
+        </div>
 
-    </div><!-- FINE CLASSE WRAPPED  -->
+      </nav>
+      <!-- FINE NAV SINISTRO -->
+
+      <!-- INIZIO MAIN, RIQUADRO PRINCIPALE CON LE CANZONI  -->
+      <main>
+        <div class="main_content">
+          <div class="main_lista text-center">
+            <ul>
+              <li><a href="#">IN EVIDENZA</a></li>
+              <li><a href="#">PODCAST</a></li>
+              <li><a href="#">CLASSIFICHE</a></li>
+              <li><a href="#">GENERI E MOOD</a></li>
+              <li><a href="#">NUOVE USCITE</a></li>
+              <li><a href="#">SCOPRI</a></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <!-- FINE MAIN, RIQUADRO PRINCIPALE CON LE CANZONI  -->
+
+      <!-- INIZIO FOOTER, PLAYER FISSATO IN BASSO  -->
+      <footer class="c_grey">
+
+        <!-- NOME CANZONE (SEZIONE A SINISTRA) -->
+        <div class="left_nome_canzone">
+          <div class="immagine_canzone">
+            <img src="img/player_left.jpg" alt="">
+          </div>
+          <div class="titolo_canzone">
+            <h5 class="c_white">Sinister</h5>
+            <a href="#" class="c_grey">Brano nome</a>
+          </div>
+          <div class="icone_canzone">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href=""><i class="far fa-folder"></i></a>
+          </div>
+        </div>
+
+        <!-- PLAYER (SEZIONE CENTRALE) -->
+        <div class="middle_player">
+          <div class="icone_player">
+            <a href="#"><i class="fas fa-random"></i></a>
+            <a href="#"><i class="fas fa-step-backward"></i></a>
+            <a href="#" class="play"><i class="far fa-play-circle"></i></a>
+            <a href="#"><i class="fas fa-step-forward"></i></a>
+            <a href="#"><i class="fas fa-redo-alt"></i></a>
+          </div>
+          <div class="barra_player">
+            <p class="c_white">0:25</p>
+            <a href="#" class="barra_sotto">
+              <div class="barra_sopra">
+                <div class="pallino_hover">
+                </div>
+              </div>
+            </a>
+            <p class="c_white">4:35</p>
+          </div>
+        </div>
+
+        <!-- VOLUME (SEZIONE A DESTRA) -->
+        <div class="right_volume">
+          <a href="#"><i class="fas fa-list-ul"></i></a>
+          <a href="#"><i class="fas fa-desktop"></i></a>
+          <a href="#"><i class="fas fa-volume-up"></i></a>
+          <a href="#"class="barra_volume">
+            <div class="barra_volume_sopra">
+
+            </div>
+          </a>
+        </div>
+
+      </footer>
+      <!-- FINE FOOTER, PLAYER FISSATO IN BASSO  -->
+
+    </div>
+    <!-- FINE CLASSE WRAPPED  -->
+
   </body>
 </html>

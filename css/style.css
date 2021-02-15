@@ -6,26 +6,279 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.c_white {
+  color: white;
+}
+
+.c_grey {
+  color: grey;
+}
+
 .wrapped {
   width: 100%;
   height: 100vh;
-  background-color: black;
 }
 
+li {
+  list-style: none;
+}
+/* FINE REGOLE GENERALI  */
+
+/* ------TOP HEADER  ------*/
+.top_header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 250px;
+  height: 80px;
+  padding-right: 30px;
+  background-color: #080B12;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top_header .upgrade {
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+}
+/* ------FINE TOP HEADER ------- */
+
+/*------ MENU FISSO A SINISTRA  ------*/
 .menu_sinistra {
+  width: 250px;
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 100px;
-  width: 300px;
-  background-color: blue;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px;
 }
 
+.menu_sinistra a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* LOGO SPOTIFY */
+.img_logo {
+  height: 50px;
+  margin-bottom: 15px;
+}
+/* FINE LOGO SPOTIFY */
+
+/* NAV HOME (PRIMA SEZIONE MENU)  */
+.nav_home ul li , .nav_playlist ul li {
+  line-height: 35px;
+}
+
+.nav_home ul li a img {
+  height: 25px;
+  padding-right: 5px;
+}
+/* FINE NAV HOME  */
+
+/* NAV PLAYLIST (SECONDA SEZIONE MENU) */
+.nav_playlist {
+  flex-grow: 2;
+  overflow: auto;
+}
+
+/* quadratino del crea playlist */
+.plus_square {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: lightgrey;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  margin-right: 10px;
+}
+
+.plus_square i {
+  position: absolute;
+  font-size: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  color: black;
+}
+/* FINE NAV PLAYLIST  */
+
+/* NAV NAME (TERZA SEZIONE MENU) */
+.nav_name {
+  background-color: black;
+}
+
+.nav_name .install i {
+  padding-right: 10px;
+}
+.nav_name h5 {
+  display: inline;
+}
+
+.finto_hr {
+  border: 1px solid grey;
+  width: 210px;
+  margin: 10px 0;
+}
+
+.omino {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* FINE NAV NAME  */
+
+/* ------FINE MENU A SINISTRA ------- */
+
+/* ------MAIN --------- */
+.main_content {
+  margin-top: 80px;
+  margin-left: 250px;
+  min-height: calc(100vh - 80px - 80px);
+  width: calc(100% - 250px);
+  background-color: #141922;
+  padding: 20px;
+}
+
+.main_lista li {
+  display: inline;
+  padding-right: 20px;
+}
+.main_lista li a {
+  color: grey;
+}
+/*-------- FINE MAIN --------*/
+
+/* --------FOOTER ---------*/
 footer {
+  height: 80px;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100px;
-  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282828;
+  padding: 20px;
+  z-index: 3333;
 }
+
+/* PLAYER (SEZIONE A SINISTRA) */
+.left_nome_canzone img {
+  height: 50px;
+}
+
+.left_nome_canzone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+
+.immagine_canzone {
+  flex-grow: 1;
+}
+.titolo_canzone {
+  flex-grow: 2;
+}
+.icone_canzone {
+  flex-grow: 1;
+}
+
+.icone_canzone a {
+  color: grey;
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+
+.titolo_canzone h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* PLAYER (SEZIONE CENTRALE) */
+.middle_player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.barra_player {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.barra_sotto {
+  display: block;
+  height: 5px;
+  width: 70%;
+  background-color: grey;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.barra_sopra {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 70%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.middle_player a , .right_volume a {
+  color: white;
+  padding-right: 10px;
+}
+.middle_player .play {
+  font-size: 2em;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.middle_player a:not(.play) {
+  font-size: 1.2em;
+}
+/* VOLUME (SEZIONE A DESTRA) */
+.right_volume {
+  width: 15%;
+}
+
+.barra_volume {
+  display: inline-block;
+  height: 5px;
+  width: 50%;
+  background-color: grey;
+  border-radius: 10px;
+  position: relative;
+}
+.barra_volume_sopra {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 70%;
+  border-radius: 10px;
+  background-color: white;
+}
+/*-------- FINE FOOTER ---------*/
