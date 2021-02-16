@@ -181,11 +181,26 @@ li {
 
 .main_lista li {
   display: inline;
-  padding-right: 20px;
+  margin-right: 20px;
+  position: relative;
 }
 
 .main_lista li a {
   color: grey;
+}
+
+.main_lista .righina_sotto_verde {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: lightgreen;
+}
+
+.main_lista .rig_hid {
+  visibility: hidden;
 }
 
 .main_canzoni {
@@ -305,7 +320,6 @@ footer {
   width: 70%;
   background-color: grey;
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -319,6 +333,14 @@ footer {
   background-color: white;
 }
 
+.pallino_hover {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50% , -50%);
+}
+
 .middle_player a , .right_volume a {
   color: white;
   padding-right: 10px;
@@ -328,6 +350,11 @@ footer {
   padding-left: 10px;
   padding-right: 20px;
 }
+
+.play i {
+  transition: all 1s;
+}
+
 .middle_player a:not(.play) {
   font-size: 1.2em;
 }
@@ -395,7 +422,38 @@ footer {
   color: white;
 }
 
-/* Main canzoni  */
+/* Main lista e canzoni  */
+.main_lista li:hover .rig_hid {
+  visibility: visible;
+}
+.main_lista li:hover a {
+  color: white;
+  text-decoration: none;
+}
+
 .box_img:hover .layover_play {
   visibility: visible;
+}
+
+/* Footer  */
+.left_nome_canzone a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.icone_player .play:hover i {
+  transform: scale(1.2);
+  color: lightgreen;
+}
+
+.icone_player a:not(.play):hover i {
+  color: lightgreen;
+}
+
+.barra_volume:hover .pallino_hover , .barra_sotto:hover .pallino_hover {
+  visibility: visible;
+}
+
+.barra_volume:hover .barra_volume_sopra , .barra_sotto:hover .barra_sopra {
+  background-color: lightgreen;
 }
