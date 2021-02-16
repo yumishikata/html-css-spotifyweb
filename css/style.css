@@ -83,6 +83,11 @@ li {
   height: 50px;
   margin-bottom: 15px;
 }
+.img_logo_piccolo {
+  padding-left: 20px;
+  height: 40px;
+  margin-bottom: 15px;
+}
 /* FINE LOGO SPOTIFY */
 
 /* NAV HOME (PRIMA SEZIONE MENU)  */
@@ -106,7 +111,7 @@ li {
 /* NAV PLAYLIST (SECONDA SEZIONE MENU) */
 .nav_playlist {
   flex-grow: 2;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 /* quadratino del crea playlist */
@@ -186,7 +191,9 @@ li {
 .main_canzoni {
   width: 100%;
 }
-
+.main_canzoni .row > div {
+  min-height: 300px;
+}
 .main_canzoni img {
   width: 100%;
   height: auto;
@@ -200,6 +207,31 @@ li {
   border-radius: 50%;
 }
 
+.box_img {
+  position: relative;
+}
+.layover_play {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.layover_play i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 50px;
+  color: white;
+}
+
+.lay_circle {
+  border-radius: 50%;
+}
 /*-------- FINE MAIN --------*/
 
 /* --------FOOTER ---------*/
@@ -323,7 +355,29 @@ footer {
 }
 /*-------- FINE FOOTER ---------*/
 
+/* ------MEDIA QUERIES----- */
 
+@media screen and (max-width: 767px) {
+  .menu_sinistra {
+    width: 80px;
+  }
+  .nav_home .casetta {
+    border: none;
+  }
+  .finto_hr {
+    border: none;
+  }
+  .nav_name {
+    text-align: center;
+  }
+  .main_content {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+  }
+  .top_header {
+    left: 80px;
+  }
+}
 /* ---------- HOVER --------- */
 
 /* Top header  */
@@ -337,6 +391,11 @@ footer {
   color: white;
 }
 
-.nav_home li:not(li:first-child):hover a {
+.menu_sinistra a:hover  {
   color: white;
+}
+
+/* Main canzoni  */
+.box_img:hover .layover_play {
+  visibility: visible;
 }
