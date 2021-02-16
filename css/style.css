@@ -265,7 +265,7 @@ footer {
   align-items: center;
   flex-wrap: nowrap;
   background-color: #282828;
-  padding: 20px;
+  padding: 20px 10px;
   z-index: 3333;
 }
 
@@ -278,7 +278,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  width: 180px;
 }
 
 .immagine_canzone {
@@ -364,7 +364,7 @@ footer {
 }
 /* VOLUME (SEZIONE A DESTRA) */
 .right_volume {
-  width: 200px;
+  width: 180px;
 }
 
 .barra_volume {
