@@ -257,7 +257,7 @@ footer {
   left: 0;
   right: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   background-color: #282828;
@@ -274,7 +274,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 15%;
+  width: 200px;
 }
 
 .immagine_canzone {
@@ -360,7 +360,7 @@ footer {
 }
 /* VOLUME (SEZIONE A DESTRA) */
 .right_volume {
-  width: 15%;
+  width: 200px;
 }
 
 .barra_volume {
